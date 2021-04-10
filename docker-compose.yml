@@ -1,0 +1,13 @@
+version: '3'
+services:
+  ros2desktop:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - '6080:80'
+    volumes:
+      - ./volume:/home/ubuntu/workspace/ledcamp9
+    shm_size: 1024MB
+
+    
