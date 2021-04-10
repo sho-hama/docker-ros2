@@ -1,0 +1,10 @@
+- docker-compose up -d
+- ブラウザでlocalhost:6080
+- Terminalを開く
+- cd ~/workspace/ledcamp9
+- colcon build
+- . ./install/local_setup.bash
+- echo "export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ubuntu/workspace/ledcamp9/build/pubsub" >> ~/.bashrc 
+- source ~/.bashrc
+- ros2 run pubsub LedTank
+- (別ターミナル)ros2 run pubsub subscriber
